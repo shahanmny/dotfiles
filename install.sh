@@ -5,9 +5,6 @@ DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "Setting up dotfiles from $DOTFILES"
 
-# Pull submodules
-git -C "$DOTFILES" submodule update --init --recursive
-
 # nvim
 if [ -e "$HOME/.config/nvim" ] && [ ! -L "$HOME/.config/nvim" ]; then
   echo "Backing up existing ~/.config/nvim to ~/.config/nvim.bak"
