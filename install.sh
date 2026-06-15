@@ -25,4 +25,8 @@ fi
 ln -sf "$DOTFILES/tmux/.tmux.conf" "$HOME/.tmux.conf"
 echo "Linked ~/.tmux.conf -> $DOTFILES/tmux/.tmux.conf"
 
+# nvim keymaps cheat sheet
+ln -sf "$DOTFILES/nvim/nvim-keymaps.md" "$HOME/nvim-keymaps.md"
+echo "Linked ~/nvim-keymaps.md -> $DOTFILES/nvim/nvim-keymaps.md"
+
 echo "Done. Reload tmux with: tmux source ~/.tmux.conf"
