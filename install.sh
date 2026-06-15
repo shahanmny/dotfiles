@@ -26,4 +26,14 @@ echo "Linked ~/.tmux.conf -> $DOTFILES/tmux/.tmux.conf"
 ln -sf "$DOTFILES/nvim/nvim-keymaps.md" "$HOME/nvim-keymaps.md"
 echo "Linked ~/nvim-keymaps.md -> $DOTFILES/nvim/nvim-keymaps.md"
 
-echo "Done. Reload tmux with: tmux source ~/.tmux.conf"
+# bash
+if ! grep -q "dotfiles/bash/custom.sh" "$HOME/.bashrc"; then
+  echo "" >> "$HOME/.bashrc"
+  echo "# Dotfiles" >> "$HOME/.bashrc"
+  echo '[ -f "$HOME/dotfiles/bash/custom.sh" ] && source "$HOME/dotfiles/bash/custom.sh"' >> "$HOME/.bashrc"
+  echo "Added source line to ~/.bashrc"
+else
+  echo "~/.bashrc already sources custom.sh"
+fi
+
+echo "Done. Reload shell with: source ~/.bashrc"
