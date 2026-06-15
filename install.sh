@@ -23,10 +23,10 @@ ln -sf "$DOTFILES/tmux/.tmux.conf" "$HOME/.tmux.conf"
 echo "Linked ~/.tmux.conf -> $DOTFILES/tmux/.tmux.conf"
 
 # bash
-if ! grep -q "dotfiles/bash/custom.sh" "$HOME/.bashrc"; then
+if ! grep -q "dotfiles/bash/.bashrc" "$HOME/.bashrc"; then
   echo "" >> "$HOME/.bashrc"
   echo "# Dotfiles" >> "$HOME/.bashrc"
-  echo '[ -f "$HOME/dotfiles/bash/custom.sh" ] && source "$HOME/dotfiles/bash/custom.sh"' >> "$HOME/.bashrc"
+  echo '[ -f "$HOME/dotfiles/bash/.bashrc" ] && source "$HOME/dotfiles/bash/.bashrc"' >> "$HOME/.bashrc"
   echo "Added source line to ~/.bashrc"
 else
   echo "~/.bashrc already sources custom.sh"
