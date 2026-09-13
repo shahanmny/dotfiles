@@ -40,6 +40,7 @@ lua/plugins/              — One file per plugin, each returns a lazy.nvim spec
 | `autopairs.lua` | nvim-autopairs | Auto close brackets/quotes |
 | `indent-blankline.lua` | indent-blankline.nvim | Indent guides |
 | `fidget.lua` | fidget.nvim | LSP progress indicator |
+| `tmux-navigator.lua` | vim-tmux-navigator | Seamless Ctrl-hjkl navigation between nvim splits and tmux panes (needs matching tmux config, see `tmux/.tmux.conf`) |
 
 ## Environment
 
