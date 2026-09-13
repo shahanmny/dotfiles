@@ -7,12 +7,6 @@ map("v", "jk", "<Esc>", { desc = "Exit visual mode" })
 map("s", "jk", "<Esc>", { desc = "Exit select mode" })
 map("x", "jk", "<Esc>", { desc = "Exit visual block mode" })
 
--- Window navigation
-map("n", "<C-h>", "<C-w>h", { desc = "Move to left split" })
-map("n", "<C-j>", "<C-w>j", { desc = "Move to below split" })
-map("n", "<C-k>", "<C-w>k", { desc = "Move to above split" })
-map("n", "<C-l>", "<C-w>l", { desc = "Move to right split" })
-
 -- Navigation
 map({ "n", "v" }, "<M-l>", "$", { desc = "End of line" })
 map({ "n", "v" }, "<M-h>", "^", { desc = "Start of line" })

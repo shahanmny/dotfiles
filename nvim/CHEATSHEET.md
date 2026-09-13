@@ -6,8 +6,12 @@ will regenerate this file from the config.
 
 ```
 GENERAL      jk Exit insert/visual/select | <leader>w Save | <leader>h Clear hl search
-             <C-h/j/k/l> Move split left/down/up/right | < / > (visual) Indent+reselect
-             <M-h> Start of line | <M-l> End of line | <M-j/k> Half page down/up
+             <C-h/j/k/l> Move split/pane left/down/up/right (crosses into tmux)
+             < / > (visual) Indent+reselect | <M-h> Start of line | <M-l> End of line
+             <M-j/k> Half page down/up
+
+SPLITS       tmux (prefix Ctrl-b): prefix " Horizontal pane | prefix % Vertical pane
+             nvim: <C-w>s / :split Horizontal window | <C-w>v / :vsplit Vertical window
 
 LSP          gd Definition | gD Declaration | gr References | gi Implementation
              K Hover docs | <leader>rn Rename | <leader>ca Code action
