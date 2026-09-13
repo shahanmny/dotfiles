@@ -6,8 +6,8 @@ will regenerate this file from the config.
 
 ```
 GENERAL      jk Exit insert/visual/select | <leader>w Save | <leader>h Clear hl search
-             <C-h/j/k/l> Move split left/down/up/right | < / > (visual) Indent+reselect
-             <M-h> Start of line | <M-l> End of line | <M-j/k> Half page down/up
+             <M-h/j/k/l> Move split left/down/up/right | < / > (visual) Indent+reselect
+             <C-h> Start of line | <C-l> End of line | <C-j/k> Half page down/up
 
 LSP          gd Definition | gD Declaration | gr References | gi Implementation
              K Hover docs | <leader>rn Rename | <leader>ca Code action
