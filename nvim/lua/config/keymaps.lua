@@ -7,9 +7,6 @@ map("v", "jk", "<Esc>", { desc = "Exit visual mode" })
 map("s", "jk", "<Esc>", { desc = "Exit select mode" })
 map("x", "jk", "<Esc>", { desc = "Exit visual block mode" })
 
--- Window navigation (Ctrl-hjkl) is handled by vim-tmux-navigator,
--- see lua/plugins/tmux-navigator.lua
-
 -- Navigation
 map({ "n", "v" }, "<M-l>", "$", { desc = "End of line" })
 map({ "n", "v" }, "<M-h>", "^", { desc = "Start of line" })
