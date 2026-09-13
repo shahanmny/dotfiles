@@ -32,6 +32,15 @@ else
   echo "~/.bashrc already sources custom.sh"
 fi
 
+# claude skills
+mkdir -p "$HOME/.claude/skills"
+if [ -e "$HOME/.claude/skills/nvim-cheatsheet" ] && [ ! -L "$HOME/.claude/skills/nvim-cheatsheet" ]; then
+  echo "Backing up existing ~/.claude/skills/nvim-cheatsheet to ~/.claude/skills/nvim-cheatsheet.bak"
+  mv "$HOME/.claude/skills/nvim-cheatsheet" "$HOME/.claude/skills/nvim-cheatsheet.bak"
+fi
+ln -sfn "$DOTFILES/claude/skills/nvim-cheatsheet" "$HOME/.claude/skills/nvim-cheatsheet"
+echo "Linked ~/.claude/skills/nvim-cheatsheet -> $DOTFILES/claude/skills/nvim-cheatsheet"
+
 # tpm
 TPM_DIR="$HOME/.tmux/plugins/tpm"
 if [ ! -d "$TPM_DIR" ]; then
