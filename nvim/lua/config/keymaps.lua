@@ -13,6 +13,12 @@ map("n", "<C-j>", "<C-w>j", { desc = "Move to below split" })
 map("n", "<C-k>", "<C-w>k", { desc = "Move to above split" })
 map("n", "<C-l>", "<C-w>l", { desc = "Move to right split" })
 
+-- Navigation
+map({ "n", "v" }, "<M-l>", "$", { desc = "End of line" })
+map({ "n", "v" }, "<M-h>", "^", { desc = "Start of line" })
+map({ "n", "v" }, "<M-j>", "<C-d>", { desc = "Half page down" })
+map({ "n", "v" }, "<M-k>", "<C-u>", { desc = "Half page up" })
+
 -- Clear search highlight
 map("n", "<leader>h", ":nohl<CR>", { desc = "Clear search highlight", silent = true })
 
