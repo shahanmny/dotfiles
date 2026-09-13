@@ -14,6 +14,6 @@ install.sh   — Symlinks configs and sets up shell on a new machine
 ## Install
 
 ```bash
-git clone git@github.com:shahanmny/dotfiles.git ~/dotfiles
-cd ~/dotfiles && ./install.sh
+git clone git@github.com:shahanmny/dotfiles.git ~/projects/dotfiles
+cd ~/projects/dotfiles && ./install.sh
 ```
